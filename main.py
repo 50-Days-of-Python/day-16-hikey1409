@@ -3,7 +3,7 @@ def sum_list(l):
   sdl=[]
   for i in l:
         if type(i) == list:
-            sdl.extend(flat_list(i))
+            sdl.extend(sum_list(i))
         else:
             sdl.append(i)
   for i in range(0,len(sdl)):
